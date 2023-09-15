@@ -3,60 +3,50 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>🎨 Galeria de Arte - AMARTE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="index.css">
   </head>
-  <center><h1>AMARTE</h1></center>
-  <center><h3>Galeria de Arte</h3></center>
-  <style>
-    .color1{
-      background-color: rgb(102, 255, 0);
-    }
-
-  </style>
+  
   <body>
     <!--Navbar-->
 
-    <nav class="navbar color1 navbar1 navbar-expand-lg">
+    <nav class="navbar navbar-expand-md navbar-light" style="background: linear-gradient(90deg, #ffa600, #00fff2);">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Historia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img class="hero-imagen-desarrollador rounded-circle" src="https://storage.googleapis.com/thehundreds/media/2015/02/curiot_thehundreds_03.jpg" alt="Logo" width="60px" height="60px" class="d-inline-block align-text-top">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Pinturas</a>
+              <a class="nav-link" style="font-size: 30px; margin-right: 50px; margin-left: 200px;" aria-current="page" id=so href="#sobre-mi">Nuestra Historia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ilustraciones</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eventos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" style="font-size: 30px; margin-right: 50px;" id=pro href="#proyectos">Pinturas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Contacto</a>
+              <a class="nav-link" style="font-size: 30px; margin-right: 50px;" id=ski href="#testimonios">Ilustraciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 30px;" id=cont href="#contacto">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-          </form>
         </div>
       </div>
     </nav>
+      
+    <center><h1>AMARTE</h1></center>
+    <center><h3>Galeria de Arte</h3></center>
 
       <!--Cards-->
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card">
             <img src="https://i.seadn.io/gcs/files/f33653bf81a996a8cc7804a7e23808d9.jpg?auto=format&dpr=1&w=384" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="card-title">Ofrenda</h5>
               <p class="card-text">✨ Las venas que fluyen que nutren todo 💧🍐🍒🥑🍇🌺🌷✨ aguas sagradas ✨ diosa de la tierra ✨ nacimiento milagroso creativo 🌿🙏🌿 un 🌎 equilibrado redimiremos con tu divina presencia 💗 Artista: Curiot</p>
             </div>
@@ -66,7 +56,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card">
             <img src="https://i.seadn.io/gcs/files/2ef4f395cdd1ddec9628aace42b5c886.jpg?auto=format&dpr=1&w=384" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rayo de luna</h5>
@@ -80,7 +70,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card">
             <img src="https://i.seadn.io/gcs/files/dbe633003762a36e3e30759740b2080f.jpg?auto=format&dpr=1&w=384" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Encontrémonos en el mar de flores</h5>
@@ -96,5 +86,9 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+    <div class="derechos-de-autor" >Creado por Erandy Diana (2023) &#169;</div>
+  </footer>
   </body>
 </html>
